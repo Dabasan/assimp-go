@@ -6,7 +6,7 @@ import (
 	"github.com/dabasan/assimp-go/assimp"
 )
 
-func main() {
+func showInfo() {
 	major := assimp.GetVersionMajor()
 	minor := assimp.GetVersionMinor()
 	revision := assimp.GetVersionRevision()
@@ -14,4 +14,8 @@ func main() {
 
 	legal := assimp.GetLegalString()
 	fmt.Println(legal)
+}
+
+func main() {
+	showInfo()
 }
