@@ -10,5 +10,8 @@ func main() {
 	major := assimp.GetVersionMajor()
 	minor := assimp.GetVersionMinor()
 	revision := assimp.GetVersionRevision()
-	fmt.Printf("%v.%v.%v\n", major, minor, revision)
+	fmt.Printf("Version: %v.%v.%v\n\n", major, minor, revision)
+
+	legal := assimp.GetLegalString()
+	fmt.Println(legal)
 }
