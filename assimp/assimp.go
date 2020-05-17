@@ -12,7 +12,7 @@ package assimp
 
 /*
 #cgo CPPFLAGS: -I "${SRCDIR}/C/include"
-#cgo LDFLAGS: -L "${SRCDIR}/C/bin" -lassimp
+#cgo LDFLAGS: -L "${SRCDIR}/C/bin" -Wl,-rpath="$ORIGIN" -lassimp
 
 #include <stdio.h>
 #include <stdlib.h>
