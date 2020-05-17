@@ -11,19 +11,18 @@ a basic MeshData slice.
 package assimp
 
 /*
-#cgo CPPFLAGS: -I/mingw64/include -std=c99
-#cgo LDFLAGS: -L/mingw64/lib -lassimp -lz -lstdc++
+#cgo CPPFLAGS: -I "./C/include"
+#cgo LDFLAGS: -L "./C/bin" -lassimp
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
-#include <assimp/cimport.h>
-#include <assimp/scene.h>
-#include <assimp/mesh.h>
-#include <assimp/cimport.h>
-#include <assimp/matrix4x4.h>
-#include <assimp/postprocess.h>
+#include"assimp/cimport.h"
+#include"assimp/matrix4x4.h"
+#include"assimp/mesh.h"
+#include"assimp/postprocess.h"
+#include"assimp/scene.h"
+#include"assimp/version.h"
 
 struct aiAnimation* animation_at(struct aiScene* s, unsigned int index)
 {
@@ -488,4 +487,17 @@ func ParseFile(modelFile string) (outMeshes []*gombz.Mesh, err error) {
 	C.aiReleaseImport(cScene)
 
 	return outMeshes, nil
+}
+
+func aiGetLegalString() string {
+	return C.GoString(C.aiGetLegalString())
+}
+func aiGetVersionMinor() int {
+	return int(C.aiGetVersionMinor())
+}
+func aiGetVersionMajor() int {
+	return int(C.aiGetVersionMajor())
+}
+func aiGetVersionRevision() int {
+	return int(C.aiGetVersionRevision())
 }
