@@ -489,15 +489,15 @@ func ParseFile(modelFile string) (outMeshes []*gombz.Mesh, err error) {
 	return outMeshes, nil
 }
 
-func aiGetLegalString() string {
+func GetLegalString() string {
 	return C.GoString(C.aiGetLegalString())
 }
-func aiGetVersionMinor() int {
+func GetVersionMinor() int {
 	return int(C.aiGetVersionMinor())
 }
-func aiGetVersionMajor() int {
+func GetVersionMajor() int {
 	return int(C.aiGetVersionMajor())
 }
-func aiGetVersionRevision() int {
+func GetVersionRevision() int {
 	return int(C.aiGetVersionRevision())
 }
