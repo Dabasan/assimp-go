@@ -11,8 +11,8 @@ a basic MeshData slice.
 package assimp
 
 /*
-#cgo CPPFLAGS: -I "./C/include"
-#cgo LDFLAGS: -L "./C/bin" -lassimp
+#cgo CPPFLAGS: -I "${SRCDIR}/C/include"
+#cgo LDFLAGS: -L "${SRCDIR}/C/bin" -lassimp
 
 #include <stdio.h>
 #include <stdlib.h>
