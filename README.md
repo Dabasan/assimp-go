@@ -1,8 +1,6 @@
 ASSIMP-GO
 =========
 
-**Currently under development so that it works on both Windows and Linux......**
-
 This is a [Go][golang] library that wraps the use of the Open Asset Import Library
 known as [assimp][assimp-link].
 
@@ -31,8 +29,6 @@ them into the [Gombz][gombz-link] meshes. Once imported, you can load an file
 ```
 srcMeshes, err := assimp.ParseFile(srcFilepath)
 ```
-
-
 
 LICENSE
 =======
