@@ -28,6 +28,6 @@ func showModelInfo(model_filename string) {
 }
 
 func main() {
-	//showInfo()
-	showModelInfo("model.x")
+	showInfo()
+	//showModelInfo("model.x")
 }
