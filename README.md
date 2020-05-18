@@ -21,7 +21,7 @@ C code is derived from [Assimp 5.0.1](https://github.com/assimp/assimp/releases/
 ## Installation
 
 ```
-go get github.com/dabasan/assimp-go 
+go get github.com/dabasan/assimp-go
 ```
 
 ### Linux
@@ -41,7 +41,7 @@ collect2: error: ld returned 1 exit status
 ## Run
 
 1. Build an executable with `go build`
-2. Locate the library file(s) (Windows .dll or Linux .so) at the same directory as the executable
+2. Copy the library file(s) (Windows .dll or Linux .so) to the same directory as the executable
 3. Run the executable
 
 ### Donwload
