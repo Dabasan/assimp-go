@@ -35,7 +35,7 @@ The above command reports some errors because it does not include the Linux shar
 collect2: error: ld returned 1 exit status
 ```
 
-1. Download [libassimp](https://github.com/Dabasan/assimp-go/releases/download/v1.0.0/libassimp.tar.gz) and extract it
+1. Download [libassimp](https://github.com/Dabasan/assimp-go/releases/download/v1.0.0/linux_bin.tar.gz) and extract it
 2. Move the files into $GOPATH/src/github.com/dabasan/assimp-go/assimp/C/bin
 
 ## Run
@@ -46,8 +46,8 @@ collect2: error: ld returned 1 exit status
 
 ### Donwload
 
-- [DLL for Windows](https://github.com/Dabasan/assimp-go/releases/download/v1.0.0/assimp.zip)
-- [SO for Linux](https://github.com/Dabasan/assimp-go/releases/download/v1.0.0/libassimp.tar.gz)
+- [Windows binary](https://github.com/Dabasan/assimp-go/releases/download/v1.0.0/windows_bin.zip)
+- [Linux binary](https://github.com/Dabasan/assimp-go/releases/download/v1.0.0/linux_bin.tar.gz)
 
 Usage
 -----
