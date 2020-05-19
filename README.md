@@ -44,7 +44,7 @@ collect2: error: ld returned 1 exit status
 2. Copy the library file(s) (Windows .dll or Linux .so) to the same directory as the executable
 3. Run the executable
 
-### Donwload
+### Donwload native libraries
 
 - [Windows binary](https://github.com/Dabasan/assimp-go/releases/download/v1.0.0/windows_bin.zip)
 - [Linux binary](https://github.com/Dabasan/assimp-go/releases/download/v1.0.0/linux_bin.tar.gz)
