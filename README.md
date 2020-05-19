@@ -26,7 +26,7 @@ go get github.com/dabasan/assimp-go
 
 ### Linux
 
-The above command reports some errors because it does not include the Linux shared object.
+The above command reports some errors because it does not include library files for Linux.
 
 ```
 # github.com/dabasan/assimp-go
