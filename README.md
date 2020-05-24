@@ -24,30 +24,13 @@ C code is derived from [Assimp 5.0.1](https://github.com/assimp/assimp/releases/
 go get github.com/dabasan/assimp-go
 ```
 
-### Linux
-
-The above command reports some errors because it does not include library files for Linux.
-
-```
-# github.com/dabasan/assimp-go
-/usr/lib/go-1.10/pkg/tool/linux_amd64/link: running gcc failed: exit status 1
-/usr/bin/ld: cannot find -lassimp
-collect2: error: ld returned 1 exit status
-```
-
-1. Download [libassimp](https://github.com/Dabasan/assimp-go/releases/download/v1.0.0/linux_bin.tar.gz) and extract it
-2. Move the files into $GOPATH/src/github.com/dabasan/assimp-go/assimp/C/bin
-
 ## Run
 
 1. Build an executable with `go build`
 2. Copy the library file(s) (Windows .dll or Linux .so) to the same directory as the executable
 3. Run the executable
 
-### Donwload native libraries
-
-- [Windows binary](https://github.com/Dabasan/assimp-go/releases/download/v1.0.0/windows_bin.zip)
-- [Linux binary](https://github.com/Dabasan/assimp-go/releases/download/v1.0.0/linux_bin.tar.gz)
+Native libraries are located in [bin](./assimp/C/bin).
 
 Usage
 -----
