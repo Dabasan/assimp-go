@@ -6,14 +6,16 @@ import (
 	"github.com/dabasan/assimp-go/assimp"
 )
 
-func showInfo() {
+func showAssimpInfo() {
 	major := assimp.GetVersionMajor()
 	minor := assimp.GetVersionMinor()
 	revision := assimp.GetVersionRevision()
-	fmt.Printf("Version: %v.%v.%v\n\n", major, minor, revision)
+	fmt.Printf("Version: %v.%v.%v\n", major, minor, revision)
+	fmt.Println("==============================")
 
 	legal := assimp.GetLegalString()
 	fmt.Println(legal)
+	fmt.Println("==============================")
 }
 func showModelInfo(model_filename string) {
 	meshes, err := assimp.ParseFile(model_filename)
@@ -23,11 +25,12 @@ func showModelInfo(model_filename string) {
 
 	for i, mesh := range meshes {
 		fmt.Printf("[Mesh %v]\n", i)
-		fmt.Printf("Vertex num: %v\n", mesh.VertexCount)
+		fmt.Printf("Face num: %v\n", mesh.FaceCount)
 	}
+	fmt.Println("==============================")
 }
 
 func main() {
-	showInfo()
-	//showModelInfo("model.x")
+	showAssimpInfo()
+	showModelInfo("model.obj")
 }
