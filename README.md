@@ -47,11 +47,6 @@ srcMeshes, err := assimp.ParseFile(srcFilepath)
 LICENSE
 =======
 
-Assimp-go is released under the BSD license. See the [LICENSE][license-link] file for more details.
+This project is released under the MIT license.
 
-
-[golang]: https://golang.org/
-[license-link]: https://raw.githubusercontent.com/tbogdala/assimp-go/master/LICENSE
-[assimp-link]: http://assimp.sourceforge.net/
-[mgl]: https://github.com/go-gl/mathgl
-[gombz-link]: https://github.com/tbogdala/gombz
+See also: [License for the original project](https://github.com/tbogdala/assimp-go/blob/master/LICENSE)
